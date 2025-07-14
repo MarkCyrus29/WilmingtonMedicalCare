@@ -1,0 +1,99 @@
+{
+  "NAVLINKS": [
+    {
+      "title": "Your Visit",
+      "children": [
+        { "title": "Online Check-In", "link": "/patients-visitors/online-check-in" },
+        { "title": "Pre-registration", "site": "https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg==" },
+        { "title": "Patient Portal", "site": "https://wmhintouch.insynchcs.com/" },
+        { "title": "Intake Process", "link": "/patients-visitors/intake-process" },
+        { "title": "Appointment Request", "site": "https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg==" },
+        { "title": "Consent Forms", "site": "https://hipaa.jotform.com/wmhnc/roitwoway" },
+        { "title": "Rates & Fees", "link": "/patients-visitors/rates-fees" },
+        { "title": "Insurance Info", "link": "/patients-visitors/insurance-info" },
+        { "title": "Price Transparency", "link": "/patients-visitors/price-transparency" },
+        { "title": "Policies", "link": "/patients-visitors/policies" },
+        { "title": "Resources", "link": "/patients-visitors/resources" },
+        { "title": "Pay My Bill", "link": "/patients-visitors/pay-my-bill" },
+        { "title": "Blog & News", "link": "/patients-visitors/blog-news" }
+      ]
+    },
+    {
+      "title": "Patients Care",
+      "children": [
+        {
+          "title": "Virtual Visits",
+          "link": "/virtual-visits"
+        },  
+        {
+          "title": "Health Services",
+          "link": "/health-services",
+          "children": [
+            { "title": "Wellness Exams", "link": "/health-services/wellness-exams" },
+            { "title": "Men's & Women's Health", "link": "/health-services/mens-womens-health" },
+            { "title": "Chronic Disease Management", "link": "/health-services/chronic-disease-management" },
+            { "title": "STDs Treatment", "link": "/health-services/stds-treatment" },
+            { "title": "Sprains & Minor Burns", "link": "/health-services/sprains-minor-burns" },
+            { "title": "Minor Surgeries", "link": "/health-services/minor-surgeries" },
+            { "title": "Electrocardiogram", "link": "/health-services/electrocardiogram" }
+          ]
+        },
+        {
+          "title": "Medication Management",
+          "link": "/medication-management",
+          "children": [
+            { "title": "Intake Evaluation", "link": "/medication-management/intake-evaluation" },
+            { "title": "MAT Program", "link": "/medication-management/mat-program" },
+            { "title": "Spravato", "link": "/medication-management/spravato" },
+            { "title": "Vivitrol", "link": "/medication-management/vivitrol" },
+            { "title": "Suboxone", "link": "/medication-management/suboxone" }
+          ]
+        },
+        {
+          "title": "Lab Services",
+          "link": "/lab-services",
+          "children": [
+            { "title": "Genetic Testings", "link": "/lab-services/genetic-testings" },
+            { "title": "Urinalysis", "link": "/lab-services/urinalysis" },
+            { "title": "Blood Work", "link": "/lab-services/blood-work" },
+            { "title": "Cancer Genetic Testing", "link": "/lab-services/cancer-genetic-testing" },
+            { "title": "Lab Work", "link": "/lab-services/lab-work" },
+            { "title": "Alzheimer’s Genetic Testing", "link": "/lab-services/alzheimers-genetic-testing" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "About Us",
+      "children": [
+        { "title": "Who We Are", "link": "/who-we-are" },
+        { "title": "Who We Serve", "link": "/who-we-serve" },
+        { "title": "What We Treat", "link": "/what-we-treat" },
+        {
+          "title": "Our Team",
+          "link": "/our-team"
+        }
+      ]
+    },
+    {
+      "title": "Get In Touch",
+      "link": "/get-in-touch",
+      "children": [
+        { "title": "Contact Information", "link": "/get-in-touch/contact-information" },
+        { "title": "Refer A Patient", "site": "https://hipaa.jotform.com/wmhnc/orf" },
+        { "title": "Medical Records", "link": "/get-in-touch/medical-records" },
+        { "title": "Job Opportunities", "link": "/get-in-touch/job-opportunities" },
+        { "title": "Patient Satisfaction", "site": "https://form.jotform.com/231805340764050" },
+        { "title": "Partnership", "link": "/get-in-touch/partnership" }
+      ]
+    }
+  ],
+  "FOOTERLINKS": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Who We Are", "href": "/who-we-are" },
+    { "label": "Resources", "href": "/resources" },
+    { "label": "Contact Us", "href": "/contact" },
+    { "label": "Careers", "href": "/careers" }
+  ]
+}
