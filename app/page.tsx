@@ -31,11 +31,11 @@ export default function Home() {
         <div className="h-full w-full relative">
           <HeroSlideshow
             images={[
-              "/images/home/slideshow-images/hero1.JPG",
-              "/images/home/slideshow-images/hero2.JPG",
-              "/images/home/slideshow-images/hero3.JPG",
-              "/images/home/slideshow-images/hero4.JPG",
-              "/images/home/slideshow-images/hero5.JPG",
+              "/images/home/slideshow-images/hero1.jpg",
+              "/images/home/slideshow-images/hero2.jpg",
+              "/images/home/slideshow-images/hero3.jpg",
+              "/images/home/slideshow-images/hero4.jpg",
+              "/images/home/slideshow-images/hero5.jpg",
             ]}
           />
 
@@ -58,7 +58,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto py-24 px-6 flex flex-col md:flex-row items-stretch md:items-center gap-10">
         <div className="relative w-full md:w-1/2 h-64 md:h-[450px] flex-shrink-0">
           <Image
-            src={"/images/home/slideshow-images/hero1.JPG"}
+            src={"/images/home/slideshow-images/hero1.jpg"}
             alt={"Introduction Picture"}
             fill
             className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
