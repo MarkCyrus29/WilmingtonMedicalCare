@@ -51,13 +51,13 @@ function page() {
             <h2 className="text-center">Medication-Assisted Treatment</h2>
           </div>
           <p className="mt-6 text-lg leading-relaxed text-center max-w-5xl mx-auto">
-            Substance abuse is one of our nation's major health problems and
+           {` Substance abuse is one of our nation's major health problems and
             demands effective treatment. We offer both individual and group
             therapy to engage anyone affected with a substance abuse disorder.
             Substance abuse treatment is effective in treating co-curring
             disorders. Sometimes the use of pharmacological medication, combined
             with behavioral therapies, is necessary to treat substance use
-            disorders.
+            disorders.`}
           </p>
           <div className="mt-8 bg-blue-50 rounded-xl p-6 max-w-5xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -67,9 +67,9 @@ function page() {
               </h3>
             </div>
             <p className="text-blue-700">
-              Medications prescribed as part of Medication-Assisted Treatment
+              {`Medications prescribed as part of Medication-Assisted Treatment
               models are part of the comprehensive treatment approach that
-              focuses on the "whole patient."
+              focuses on the "whole patient."`}
             </p>
           </div>
         </div>
@@ -188,10 +188,10 @@ function page() {
             </div>
 
             <p className="mt-6 text-lg leading-relaxed  max-w-4xl mx-auto">
-              Wilmington Mental Health provides in-person drug and alcohol
+              {`Wilmington Mental Health provides in-person drug and alcohol
               addiction treatment and complies with LegitScript's certification
               standards, which helps ensure transparency and compliance with
-              applicable laws and regulations.
+              applicable laws and regulations.`}
             </p>
             <p className="mt-4 text-lg leading-relaxed  max-w-4xl mx-auto">
               Our outpatient substance abuse program is suitable for people with

@@ -41,13 +41,13 @@ function page() {
             <h2 className="text-center">Suboxone</h2>
           </div>
           <p className="mt-6 text-lg leading-relaxed text-center max-w-5xl mx-auto">
-            Suboxone is a prescription medication containing buprenorphine and
+            {`Suboxone is a prescription medication containing buprenorphine and
             naloxone. Suboxone comes in both tablets and sublingual film, which
             is placed under the tongue and dissolves quickly to enter the
             bloodstream rapidly. Suboxone eliminates the "high" or intense
             feeling of euphoria experienced by patients who abuse opioids.
             Suboxone treatment is a program that also includes behavioral
-            therapy.
+            therapy.`}
           </p>
         </div>
       </section>
@@ -80,10 +80,10 @@ function page() {
               drugs cannot stimulate them and create euphoria.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-center md:text-left max-w-5xl mx-auto">
-              Naloxone blocks the effects of opioids in patients who use opioids
+              {`Naloxone blocks the effects of opioids in patients who use opioids
               while taking buprenorphine and prevents the "high" that would come
               from relapse. Suboxone is FDA-approved for the treatment of opioid
-              use disorder.
+              use disorder.`}
             </p>
           </div>
         </div>
@@ -247,7 +247,7 @@ function page() {
                   Contraindications
                 </h4>
                 <p className="text-red-700 text-sm leading-relaxed">
-                  Do not take Suboxone with other opioid medicines,
+                  {`Do not take Suboxone with other opioid medicines,
                   benzodiazepines, alcohol, or street drugs. Do not inject
                   Suboxone sublingual film, stop it suddenly, or switch to other
                   medicines that contain buprenorphine without talking to your
@@ -257,7 +257,7 @@ function page() {
                   gallbladder problems, alcoholism, a head injury or brain
                   problem, mental health problems, adrenal gland or thyroid
                   gland problems, tooth problems, or are pregnant or plan to
-                  become pregnant, are breastfeeding or plan to breastfeed.
+                  become pregnant, are breastfeeding or plan to breastfeed.`}
                 </p>
               </div>
             </div>

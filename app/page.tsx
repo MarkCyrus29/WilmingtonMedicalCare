@@ -3,28 +3,10 @@ import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
-import FormModalButton from "@/components/ui/FormModalButton";
+// import FormModalButton from "@/components/ui/FormModalButton";
 import HeroButtons from "@/components/ui/HeroButtons";
 
 export default function Home() {
-  const commonInsurances = [
-    "BlueCross Blueshield",
-    "Cigna",
-    "Aetena",
-    "HealthyBlue",
-    "WellCare",
-    "AmeriHealth Caritas",
-    "UnitedHealthCare Community Plan",
-    "Carolina Complete Health",
-    "AmBetter",
-    "Medcost",
-    "Caresource",
-    "ChampVA",
-    "Meritain Health",
-    "Carolina Behavioral Health Alliance",
-    "North Carolina State Health Plan",
-  ];
-
   return (
     <>
       {/* HERO SECTION */}
@@ -43,7 +25,7 @@ export default function Home() {
           {/* Text */}
           <div className="absolute z-30 max-w-2xl text-white left-6 right-6 top-1/2 -translate-y-1/2 md:left-24 md:right-auto text-center md:text-left">
             <h1 className="!text-white text-3xl sm:text-4xl md:text-5xl mb-4">
-              Welcome to Wilmington~
+              Welcome to Wilmington
             </h1>
             <p className="!text-white/80 text-base sm:text-lg">
               Compassionate medical care designed for you.
