@@ -114,4 +114,33 @@ export const teamData: TeamMember[] = [
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
   },
+  {
+    id: "tracey-allen",
+    pictureSrc: "/images/our-team/Tracey.png",
+    name: "Tracey Allen",
+    role: "Family Nurse Practitioner",
+    idealPopulation: "----",
+    department: "Primary Care",
+    frameworkTag: "Primary Care",
+    framework: "Primary Care & Integrated Mental Health",
+    credentials: ["FNP-C"],
+    insurance: ["----"],
+    about: [
+      "Tracey Allen, FNP-C, is a board-certified Family Nurse Practitioner with nearly 20 years of experience across diverse healthcare settings. She holds an MSN from United States University and a BSN from Chamberlain University.",
+      "Tracey has worked in cardiopulmonary and neurology ICUs, hospice, homecare, correctional health, and more, giving her a deep understanding of acute and chronic illness management.",
+      "Passionate about patient education, Tracey ensures individuals feel informed and supported through evidence-based care.",
+      "Currently at Wilmington Medical Care, she integrates primary care with mental health services and collaborates closely with therapists for holistic care. Her specialties include diabetic education, weight management, chronic illness, acute assessments, and medication-assisted treatment (MAT) for substance use disorders.",
+      "Tracey believes in meeting patients where they are and supporting them with compassion, dignity, and respect.",
+    ],
+    experience: "Nearly 20 years",
+    specialties:
+      "Primary Care, Mental Health Integration, Diabetic Education, MAT, Chronic & Acute Illness Management",
+    background:
+      "Tracey earned her MSN from United States University (2022) and BSN from Chamberlain University. She has extensive experience in ICUs, hospice, correctional health, and homecare.",
+    interests:
+      "Outside of work, Tracey enjoys healthful cooking, kayaking, playing piano, and knitting.",
+    joined: "Less than a year",
+    location: "Wilmington, NC",
+    bannerSrc: "/images/our-team/banner.svg",
+  },
 ];

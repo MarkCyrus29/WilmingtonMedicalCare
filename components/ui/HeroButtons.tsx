@@ -60,7 +60,6 @@ function HeroButtons() {
         className="hidden"
       />
 
-      {/* Request Appointment Modal */}
       {isRequestModalOpen && (
         <Modal onClose={toggleRequestModal} title="Request an Appointment">
           {!isRequestFrameLoaded ? (
@@ -76,7 +75,6 @@ function HeroButtons() {
         </Modal>
       )}
 
-      {/* Pre-registration Modal */}
       {isRegisterModalOpen && (
         <Modal onClose={toggleRegisterModal} title="Pre-register">
           {!isRegisterFrameLoaded ? (
@@ -130,7 +128,6 @@ function Modal({
   );
 }
 
-// ⬇️ Spinner Component
 function Spinner() {
   return (
     <div className="flex items-center justify-center h-full">

@@ -3,6 +3,7 @@ import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
+import FormModalButton from "@/components/ui/FormModalButton";
 import HeroButtons from "@/components/ui/HeroButtons";
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden h-[calc(100vh-100px)] w-screen flex items-center justify-center">
+      <section className=" overflow-hidden h-[calc(100vh-100px)] w-screen flex items-center justify-center">
         <div className="h-full w-full relative">
           <HeroSlideshow
             images={[
@@ -42,14 +43,25 @@ export default function Home() {
           {/* Text */}
           <div className="absolute z-30 max-w-2xl text-white left-6 right-6 top-1/2 -translate-y-1/2 md:left-24 md:right-auto text-center md:text-left">
             <h1 className="!text-white text-3xl sm:text-4xl md:text-5xl mb-4">
-              Welcome to Wilmington
+              Welcome to Wilmington~
             </h1>
             <p className="!text-white/80 text-base sm:text-lg">
               Compassionate medical care designed for you.
             </p>
           </div>
 
-          {/* Buttons */}
+          {/* <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
+            <FormModalButton
+              buttonText="Pre-register"
+              title="Pre-register"
+              src="https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+            />
+            <FormModalButton
+              buttonText="Request an Appointment"
+              title="Request an Appointment"
+              src="https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+            />
+          </div> */}
           <HeroButtons />
         </div>
       </section>
@@ -83,74 +95,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* INTEGRATED CARE SECTION */}
-      <div className="w-screen h-auto py-10 pb-12 text-center items-center flex flex-col justify-center bg-primary/75 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)]">
-        <div className="w-[75%] flex flex-col items-center">
-          <h2 className="text-xl font-semibold mb-4 !text-background">
-            Find a Provider
-          </h2>
-          <form className="w-full flex flex-col sm:flex-row items-center gap-4 flex-wrap">
-            {/* Name Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                placeholder="Search by name"
-                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
-              />
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                🔍
-              </span>
-            </div>
-
-            {/* Specialty Dropdown + Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                list="specialties"
-                placeholder="Search by specialty"
-                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
-              />
-              <datalist id="specialties">
-                <option value="Psychologist" />
-                <option value="Psychiatrist" />
-                <option value="Therapist" />
-                <option value="Counselor" />
-                <option value="Social Worker" />
-              </datalist>
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                🧠
-              </span>
-            </div>
-
-            {/* Insurance Dropdown + Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                list="insurances"
-                placeholder="Search by insurance"
-                className="w-full px-12 py-3 rounded-lg border border-background
-               placeholder:text-background font-semibold
-               focus:ring-2 focus:ring-primary focus:outline-none
-               text-base text-background"
-              />
-
-              <datalist id="insurances" className="bg-background text-dark">
-                {commonInsurances.map((ins) => (
-                  <option key={ins} value={ins} />
-                ))}
-              </datalist>
-
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                💳
-              </span>
-            </div>
-
-            {/* Submit Button */}
-            <Button title="Search" type="submit" className="py-2 px-4" />
-          </form>
-        </div>
-      </div>
 
       <section className="w-full py-24">
         <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
@@ -188,7 +132,7 @@ export default function Home() {
 
       {/* GET IN TOUCH SECTION */}
       <section className="w-screen h-auto bg-secondary flex flex-col justify-center py-24">
-        <h1 className="text-center pb-10">Get In Touch</h1>
+        <h1 className="text-center pb-10 !text-background">Get In Touch</h1>
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:justify-around px-6 md:px-16">
           {/* Map Section */}
           <div className="w-full md:w-[50%] flex justify-center">

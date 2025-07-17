@@ -35,8 +35,9 @@ export default function OurTeamPage() {
               desc="Providing general medical care. They can diagnose and treat physical illnesses, as well as refer you to a specialist if needed."
             />
             <Card
-              title="Primary Care Provider"
-              desc="Providing general medical care. They can diagnose and treat physical illnesses, as well as refer you to a specialist if needed."
+              title="Psychiatrist"
+              desc="Providing resources to help manage mental health. They can diagnose and
+treat mental disorders using medication, therapy, or a combination of both."
             />
           </div>
         </div>
@@ -101,7 +102,7 @@ export default function OurTeamPage() {
             <div className="flex flex-col gap-4">
               {[
                 { name: "Algernon Williams", role: "Medical Assistant" },
-                { name: "Averie Garcia", role: "Receptionist" },
+                { name: "Averie Garcia", role: "Patient Care Specialist" },
               ].map((staff, i) => (
                 <div key={i} className="space-y-6 flex flex-col">
                   <div className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
