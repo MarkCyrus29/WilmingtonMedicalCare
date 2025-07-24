@@ -1,4 +1,3 @@
-import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
