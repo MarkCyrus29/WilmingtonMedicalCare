@@ -410,15 +410,15 @@ function page() {
               },
               {
                 title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
               {
-                title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
+                title: "Corporate Wellness",
+                href: "https://wilmingtonmentalhealth.netlify.app/other-services/corporate-wellness",
               },
               {
                 title: "Salud Latina",
-                href: "/other-services/salud-latina",
+                href: "https://wilmingtonmentalhealth.netlify.app/other-services/salud-latina",
               },
             ].map((service, i) => (
               <RelatedServices

@@ -3,7 +3,6 @@
     {
       "title": "Your Visit",
       "children": [
-        { "title": "Online Check-In", "link": "/patients-visitors/online-check-in" },
         { "title": "Pre-registration", "site": "https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg==" },
         { "title": "Patient Portal", "site": "https://wmhintouch.insynchcs.com/" },
         { "title": "Intake Process", "link": "/patients-visitors/intake-process" },
@@ -19,7 +18,7 @@
       ]
     },
     {
-      "title": "Patients Care",
+      "title": "Patient Care",
       "children": [
         {
           "title": "Virtual Visits",

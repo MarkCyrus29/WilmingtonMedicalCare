@@ -358,20 +358,20 @@ function page() {
                 href: "/health-services/wellness-exams",
               },
               {
-                title: "Men's & Women's Health",
-                href: "/health-services/mens-womens-health",
-              },
-              {
                 title: "Medication Management",
                 href: "/health-services/medication-management",
               },
               {
-                title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                title: "Men's & Women's Health",
+                href: "/health-services/mens-womens-health",
               },
               {
-                title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
+                title: "Adult Therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
+              },
+              {
+                title: "Corporate Wellness",
+                href: "https://wilmingtonmentalhealth.netlify.app/other-services/corporate-wellness",
               },
               {
                 title: "Lab Services",

@@ -3,7 +3,7 @@ import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import PageBanner from "@/components/ui/PageBanner";
 import HorizontalCard from "@/components/client/HorizontalCardClient";
-import TeletherapyAccordion from "@/components/client/TeletheraphyAccordionClient";
+import Accordion from "@/components/ui/FAQAccordion";
 
 function Page() {
   return (
@@ -236,7 +236,7 @@ function Page() {
       <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20">
         <div className="w-[85%]">
           <h2>Common Teletherapy Questions:</h2>
-          <TeletherapyAccordion />
+          <Accordion type="telehealth"/>
         </div>
       </section>
 

@@ -65,9 +65,10 @@ function page() {
           <h2 className="text-center">Our Holistic Model of Care</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
             Our model of care is holistic and integrative in nature, based on
-            the World Health Organization&apos;s definition that health is &quot;a state
-            of complete physical, mental, and social wellbeing&quot; and wellness
-            &quot;the optimal state of health of individuals.&quot;
+            the World Health Organization&apos;s definition that health is
+            &quot;a state of complete physical, mental, and social
+            wellbeing&quot; and wellness &quot;the optimal state of health of
+            individuals.&quot;
           </p>
           <div className="mt-8 bg-blue-50 rounded-xl p-8 mx-auto">
             <div className="text-center">
@@ -75,7 +76,8 @@ function page() {
                 WHO Definition of Health
               </h3>
               <blockquote className="text-blue-700 text-lg italic mb-4">
-                &quot;A state of complete physical, mental, and social wellbeing&quot;
+                &quot;A state of complete physical, mental, and social
+                wellbeing&quot;
               </blockquote>
               <p className="text-blue-600">
                 <strong>Wellness:</strong> &quot;The optimal state of health of
@@ -203,64 +205,83 @@ function page() {
 
       {/* ─── Prevention vs Treatment Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center py-26 bg-gray-50">
-        <div className="w-[85%]">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Shield className="w-8 h-8 text-primary" />
-            <h2 className="text-center">Prevention vs. Treatment</h2>
-          </div>
-          <p className="my-6 text-lg leading-relaxed text-center max-w-6xl mx-auto">
-            Our goal is to offer preventive healthcare to keep you healthy in
-            general, which contrasts with traditional models that focus on
-            treating disease or problems. Disease prevention is cost effective
-            and reduces the risk of suffering, death, or expensive health care,
-            particularly chronic-stage disease treatment.
-          </p>
+        <div className="w-[90%]">
+          <div className="flex w-full md:flex-row flex-col gap-4 ">
+            <div className="flex-1/2">
+              <div className="flex items-center md:justify-start justify-center gap-3 mb-6">
+                <Shield className="w-8 h-8 text-primary" />
+                <h2 className="text-center md:text-left">
+                  Prevention vs. Treatment
+                </h2>
+              </div>
+              <p className="my-6 text-lg leading-relaxed max-w-6xl mx-auto text-center md:text-left">
+                Our goal is to offer preventive healthcare to keep you healthy
+                in general, which contrasts with traditional models that focus
+                on treating disease or problems. Disease prevention is cost
+                effective and reduces the risk of suffering, death, or expensive
+                health care, particularly chronic-stage disease treatment.
+              </p>
 
-          <div className="pt-8 max-w-4xl mx-auto">
-            <h3 className="text-xl font-semibold mb-4 text-center">
-              Breaking Down Barriers to Healthcare
-            </h3>
-            <p className="text-center text-gray-600 mb-6">
-              The cost of healthcare, in addition to lacking time, knowledge,
-              transportation, or stigma, can prevent people from seeking the
-              proper help.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 w-full">
-              {[
-                {
-                  title: "Make access to health care and lab tests much easier",
-                  border: "border-blue-500",
-                  textColor: "text-blue-500",
-                  icon: 0,
-                },
-                {
-                  title: "Offer health screenings",
-                  border: "border-green-500",
-                  textColor: "text-green-500",
-                  icon: 1,
-                },
-                {
-                  title: "Integrate physical and behavioral health",
-                  border: "border-purple-500",
-                  textColor: "text-purple-500",
-                  icon: 2,
-                },
-                {
-                  title: "Bridge the gap between therapy and primary care",
-                  border: "border-orange-500",
-                  textColor: "text-orange-500",
-                  icon: 3,
-                },
-              ].map(({ title, border, textColor, icon }, i) => (
-                <HorizontalCard
-                  key={i}
-                  kind="benefit"
-                  border={border}
-                  textColor={textColor}
-                  icon={icon}
-                  title={title}
+              <div className="pt-8 max-w-4xl mx-auto">
+                <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+                  Breaking Down Barriers to Healthcare
+                </h3>
+                <p className="text-center md:text-left text-gray-600 mb-6">
+                  The cost of healthcare, in addition to lacking time,
+                  knowledge, transportation, or stigma, can prevent people from
+                  seeking the proper help.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-7 w-full">
+                  {[
+                    {
+                      title:
+                        "Make access to health care and lab tests much easier",
+                      border: "border-blue-500",
+                      textColor: "text-blue-500",
+                      icon: 0,
+                    },
+                    {
+                      title: "Offer health screenings",
+                      border: "border-green-500",
+                      textColor: "text-green-500",
+                      icon: 1,
+                    },
+                    {
+                      title: "Integrate physical and behavioral health",
+                      border: "border-purple-500",
+                      textColor: "text-purple-500",
+                      icon: 2,
+                    },
+                    {
+                      title: "Bridge the gap between therapy and primary care",
+                      border: "border-orange-500",
+                      textColor: "text-orange-500",
+                      icon: 3,
+                    },
+                  ].map(({ title, border, textColor, icon }, i) => (
+                    <HorizontalCard
+                      key={i}
+                      kind="benefit"
+                      border={border}
+                      textColor={textColor}
+                      icon={icon}
+                      title={title}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="flex-1/2">
+              <div className="relative w-full h-full flex-shrink-0 ">
+                <Image
+                  src={"/images/health-services/prevention.jpg"}
+                  alt={"Prevention vs. Treatment Image"}
+                  fill
+                  className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  priority
                 />
-              ))}
+              </div>
             </div>
           </div>
         </div>
@@ -322,20 +343,20 @@ function page() {
                 href: "/health-services/medication-management",
               },
               {
-                title: "Assessments",
-                href: "/health-services/assessments",
+                title: "Lab Services",
+                href: "/lab-services",
               },
               {
                 title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
               {
-                title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
+                title: "Test & Evaluations",
+                href: "https://wilmingtonmentalhealth.netlify.app/tests-evaluations",
               },
               {
                 title: "Salud Latina",
-                href: "/other-services/salud-latina",
+                href: "https://wilmingtonmentalhealth.netlify.app/other-services/salud-latina",
               },
             ].map((service, i) => (
               <RelatedServices

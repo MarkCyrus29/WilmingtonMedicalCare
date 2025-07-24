@@ -5,13 +5,27 @@ function RelatedServices({ href, title }: { href: string; title: string }) {
   const isInternal = href.startsWith("/");
 
   const content = (
-    <div className="group block bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:border-primary/30">
+    <div
+      className={`group block bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
+        isInternal ? "hover:border-primary/30" : "hover:border-blue/30"
+      }`}
+    >
       <div className="flex items-start gap-4">
         <div className="flex-1">
-          <h4 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
+          <h4
+            className={`text-lg font-semibold text-foreground  transition-colors duration-300 mb-2 ${
+              isInternal
+                ? "group-hover:!text-primary"
+                : "group-hover:!text-blue"
+            }`}
+          >
             {title}
           </h4>
-          <div className="flex items-center text-primary opacity-100 md:opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-2 md:group-hover:translate-x-0 duration-300">
+          <div
+            className={`flex items-center ${
+              isInternal ? "group-hover:text-primary" : "group-hover:text-blue"
+            } opacity-100 md:opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-2 md:group-hover:translate-x-0 duration-300`}
+          >
             <span className="text-sm font-medium">Learn more</span>
             <svg
               className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"

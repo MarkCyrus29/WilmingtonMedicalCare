@@ -5,6 +5,7 @@ import ParallaxProviderWrapper from "@/components/ParallaxProviderWrapper";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import Footer from "@/components/layout/Footer";
 import { Poppins } from "next/font/google";
+import GetInTouch from "@/components/ui/GetInTouch";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         <ParallaxProviderWrapper>{children}</ParallaxProviderWrapper>
         <ScrollToTopButton />
+        <GetInTouch/>
         <Footer />
       </body>
     </html>

@@ -25,7 +25,7 @@ function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-           Medication Management
+            Medication Management
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Suboxone
@@ -285,7 +285,7 @@ function page() {
       {/* ─── Other Services Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
         <div className="w-[85%]">
-          <h2>Other related services:</h2>
+          <h2>Other Offered Services:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
@@ -293,13 +293,18 @@ function page() {
                 href: "/medication-management",
               },
               {
+                title: "Intake Evaluation",
+                href: "/medication-management/intake-evaluation",
+              },
+              {
+                title: "MAT Program",
+                href: "/medication-management/mat-program",
+              },
+              {
                 title: "Vivitrol",
                 href: "/medication-management/vivitrol",
               },
-              {
-                title: "Wellness Exams",
-                href: "/health-services/wellness-exams",
-              },
+
               {
                 title: "Substance Use Disorders",
                 href: "https://wilmingtonmentalhealth.vercel.app/substance-use",
@@ -307,10 +312,6 @@ function page() {
               {
                 title: "Adult Therapy",
                 href: "https://wilmingtonmentalhealth.vercel.app/mental-health/adult-therapy",
-              },
-              {
-                title: "MAT Program",
-                href: "/medication-management/mat-program",
               },
             ].map((service, i) => (
               <RelatedServices

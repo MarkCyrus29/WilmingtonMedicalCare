@@ -354,34 +354,33 @@ function page() {
       {/* ─── Other Services Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
         <div className="w-[85%]">
-          <h2>
-            Other related services that are offered at Wilmington Mental Health
-          </h2>
+          <h2>Other Offered Services:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
-                title: "Adult Therapy",
-                href: "https://wilmingtonmentalhealth.vercel.app/mental-health/adult-therapy",
-              },
-              {
-                title: "Wellness Exams",
-                href: "/health-services/wellness-exams",
-              },
-              {
                 title: "Medication Management",
                 href: "/medication-management",
+              },
+
+              {
+                title: "Vivitrol",
+                href: "/medication-management/vivitrol",
               },
               {
                 title: "Suboxone",
                 href: "/medication-management/suboxone",
               },
               {
+                title: "MAT Program",
+                href: "/medication-management/mat-program",
+              },
+              {
                 title: "Substance Use Disorders",
                 href: "https://wilmingtonmentalhealth.vercel.app/substance-use",
               },
               {
-                title: "Salud Latina",
-                href: "/services/salud-latina",
+                title: "Adult Therapy",
+                href: "https://wilmingtonmentalhealth.vercel.app/mental-health/adult-therapy",
               },
             ].map((service, i) => (
               <RelatedServices

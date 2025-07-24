@@ -410,10 +410,7 @@ function page() {
       {/* ─── Other Services Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
         <div className="w-[85%]">
-          <h2>
-            Other Related Services Offered at Wilmington Mental Health + Medical
-            Care
-          </h2>
+          <h2>Other Services Offered:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
@@ -429,16 +426,16 @@ function page() {
                 href: "/health-services/medication-management",
               },
               {
+                title: "Lab Services",
+                href: "/lab-services",
+              },
+              {
                 title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
               {
-                title: "Laboratory Services",
-                href: "/health-services/laboratory-services",
-              },
-              {
-                title: "Assessments",
-                href: "/health-services/assessments",
+                title: "Test & Evaluations",
+                href: "https://wilmingtonmentalhealth.netlify.app/tests-evaluations",
               },
             ].map((service, i) => (
               <RelatedServices

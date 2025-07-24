@@ -371,7 +371,7 @@ function page() {
               {warningSignsSymptoms.map((symptom, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 border-b border-b-accent pb-3"
+                  className="flex items-start gap-3 border-b border-b-secondary pb-3"
                 >
                   <AlertTriangle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <span className="text-red-800 font-medium">{symptom}</span>
@@ -394,16 +394,16 @@ function page() {
       {/* ─── Other Services Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center py-26 bg-gray-50">
         <div className="w-[85%]">
-          <h2>Other Services Offered at Wilmington Mental Health</h2>
+          <h2>Other Services:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
                 title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
               {
                 title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/couples-counseling",
               },
               {
                 title: "Wellness Exams",
@@ -418,8 +418,8 @@ function page() {
                 href: "/health-services/lab-services",
               },
               {
-                title: "Men's & Women's Health",
-                href: "/health-services/mens-womens-health",
+                title: "Test & Evaluations",
+                href: "https://wilmingtonmentalhealth.netlify.app/tests-evaluations",
               },
             ].map((service, i) => (
               <RelatedServices

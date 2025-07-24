@@ -27,7 +27,7 @@ function Header() {
               <a
                 href={item.site}
                 target="_blank"
-                className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                className="flex items-center transition-opacity duration-100 hover:bg-red-100 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
                 tabIndex={0}
               >
                 {item.title}
@@ -36,7 +36,7 @@ function Header() {
             ) : (
               <Link
                 href={item.link || "#"}
-                className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                className="flex items-center transition-opacity duration-100 hover:bg-red-100 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
                 tabIndex={0}
               >
                 {item.title}
@@ -63,7 +63,7 @@ function Header() {
                         <a
                           href={child.site}
                           target="_blank"
-                          className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                          className="flex items-center transition-opacity duration-100 hover:bg-red-100 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
                           tabIndex={0}
                         >
                           {child.title}
@@ -74,7 +74,7 @@ function Header() {
                       ) : (
                         <Link
                           href={child.link || "#"}
-                          className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                          className="flex items-center transition-opacity duration-100 hover:bg-red-100 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
                           tabIndex={0}
                         >
                           {child.title}
@@ -98,7 +98,7 @@ function Header() {
                             <li key={subIndex}>
                               <Link
                                 href={subChild.link || "#"}
-                                className="block px-4 py-1 text-sm text-gray-600 hover:bg-gray/50 rounded whitespace-nowrap"
+                                className="block px-4 py-2 text-gray-600 hover:bg-red-100 rounded whitespace-nowrap"
                                 tabIndex={0}
                               >
                                 {subChild.title}

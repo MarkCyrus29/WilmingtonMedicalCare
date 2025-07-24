@@ -436,12 +436,12 @@ function page() {
       {/* ─── Other Services Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
         <div className="w-[85%]">
-          <h2>Other related services</h2>
+          <h2>Other Offered Services:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
                 title: "Medication Management",
-                href: "/health-services/medication-management",
+                href: "/medication-management",
               },
               {
                 title: "Wellness Exam",
@@ -449,19 +449,19 @@ function page() {
               },
               {
                 title: "Suboxone",
-                href: "/health-services/suboxone",
+                href: "/medication-management/suboxone",
               },
               {
-                title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                title: "Spravato",
+                href: "/health-services/spravato",
               },
               {
                 title: "Substance Use Disorders",
-                href: "/mental-health/substance-use-disorders",
+                href: "https://wilmingtonmentalhealth.netlify.app/substance-use",
               },
               {
-                title: "MAT Program",
-                href: "/health-services/medication-assisted-treatment",
+                title: "Adult Therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
             ].map((service, i) => (
               <RelatedServices

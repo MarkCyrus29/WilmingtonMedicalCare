@@ -176,15 +176,15 @@ function page() {
               },
               {
                 title: "Adult Therapy",
-                href: "/mental-health/adult-therapy",
+                href: "https://wilmingtonmentalhealth.netlify.app/mental-health/adult-therapy",
               },
               {
-                title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
+                title: "Substance Use Disorders",
+                href: "https://wilmingtonmentalhealth.netlify.app/substance-use",
               },
               {
-                title: "Group Therapy",
-                href: "/mental-health/group-therapy",
+                title: "Test & Evaluations",
+                href: "https://wilmingtonmentalhealth.netlify.app/tests-evaluations",
               },
             ].map((service, i) => (
               <RelatedServices
