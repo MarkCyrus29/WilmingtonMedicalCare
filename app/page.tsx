@@ -2,7 +2,7 @@ import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
-import HeroButtons from "@/components/ui/HeroButtons";
+import MiniWindow from "@/components/ui/MiniWindow";
 
 export default function Home() {
   return (
@@ -30,19 +30,18 @@ export default function Home() {
             </p>
           </div>
 
-          {/* <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
-            <FormModalButton
-              buttonText="Pre-register"
-              title="Pre-register"
-              src="https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+          <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
+            <MiniWindow
+              link="https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+              title="Pre-Register"
+              id="Button"
             />
-            <FormModalButton
-              buttonText="Request an Appointment"
+            <MiniWindow
+              link="https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
               title="Request an Appointment"
-              src="https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+              id="Button"
             />
-          </div> */}
-          <HeroButtons />
+          </div>
         </div>
       </section>
 
