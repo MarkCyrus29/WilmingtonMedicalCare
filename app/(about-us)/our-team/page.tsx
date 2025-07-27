@@ -17,6 +17,60 @@ const groupedByDepartment = teamData.reduce<Record<string, TeamMember[]>>(
   {}
 );
 
+const partneredTeam = [
+  {
+    name: "Joseph Rengifo",
+    id: "joseph-rengifo",
+    img: "/images/our-team/Joseph.png",
+  },
+  {
+    name: "Havah Henzler",
+    id: "havah-henzler",
+    img: "/images/our-team/Havah.png",
+  },
+  { name: "Adam Howell", id: "adam-howell", img: "/images/our-team/Adam.png" },
+  {
+    name: "Dr. Perry Stanley",
+    id: "perry-stanley",
+    img: "/images/our-team/Perry.jpg",
+  },
+  {
+    name: "Kailyn Mattingly",
+    id: "kailyn-mattingly",
+    img: "/images/our-team/Kailyn.JPG",
+  },
+  {
+    name: "Abigail Waldrop",
+    id: "abigail-waldrop",
+    img: "/images/our-team/Abigail.png",
+  },
+  {
+    name: "Richard (Gage) Howard",
+    id: "richard-howard",
+    img: "/images/our-team/Richard.png",
+  },
+  {
+    name: "Catherine Fulop",
+    id: "catherine-fulop",
+    img: "/images/our-team/Catherine.JPG",
+  },
+  {
+    name: "Stacy Tarantino",
+    id: "stacy-tarantino",
+    img: "/images/our-team/Stacy Tarantino.JPG",
+  },
+  {
+    name: "Anna Gokey",
+    id: "anna-gokey",
+    img: "/images/our-team/Anna-gokey.JPG",
+  },
+  {
+    name: "Eunika Norman",
+    id: "eunika-norman",
+    img: "/images/our-team/Eunika.png",
+  },
+];
+
 export default function OurTeamPage() {
   return (
     <main>
@@ -120,42 +174,40 @@ treat mental disorders using medication, therapy, or a combination of both."
         </div>
       </section>
 
-      <section className="pt-12 py-24 ">
+      <section className="pt-12 py-24 px-4">
         <div className="max-w-6xl mx-auto ">
           <h2 className="text-center mb-10">Our Partnered Team</h2>
-          <div className="flex flex-col md:flex-row w-full gap-4">
-            {[
-              {
-                name: "Dr. Perry Stanley",
-                id: "perry-stanley",
-                img: "/images/our-team/Perry.jpg",
-              },
-              {
-                name: "Havah Henzler",
-                id: "havah-henzler",
-                img: "/images/our-team/Havah.png",
-              },
-              {
-                name: "Stacy Tarantino",
-                id: "stacy-tarantino",
-                img: "/images/our-team/Stacy Tarantino.JPG",
-              },
-            ].map((partner, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full h-full gap-4">
+            {partneredTeam.map((partner, i) => (
               <a
-                className=""
+                className="w-full h-full"
                 key={i}
                 href={
-                  "https://wilmingtonmentalhealth.vercel.app/our-team/" +
+                  "https://wilmingtonmentalhealth.netlify.app/our-team/" +
                   partner.id
                 }
               >
-                <Card
-                  title={partner.name}
-                  desc="Wilmington Mental Health"
-                  img={partner.img}
-                  customHeight="clamp(300px, 18vh, 200px)"
-                  customWidth="clamp(360px, 20vw, 600px)"
-                />
+                <div className="bg-background border border-gray/50 p-8 rounded-2xl shadow-md flex flex-col justify-start items-center transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl w-full h-full">
+                  <div
+                    style={{
+                      width: "clamp(160px, 18vw, 200px)",
+                      height: "clamp(160px, 18vw, 200px)",
+                      position: "relative",
+                    }}
+                    className="rounded-full mb-4 overflow-hidden flex-shrink-0"
+                  >
+                    <Image
+                      src={partner.img}
+                      alt={partner.name + " Portrait"}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      priority
+                    />
+                  </div>
+
+                  <h5 className="mb-2 text-center">{partner.name}</h5>
+                  <p className="!text-sm text-center flex-grow">{`Wilmington Mental Health`}</p>
+                </div>
               </a>
             ))}
           </div>

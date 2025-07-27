@@ -236,7 +236,49 @@ function Page() {
       <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20">
         <div className="w-[85%]">
           <h2>Common Teletherapy Questions:</h2>
-          <Accordion type="telehealth"/>
+          <Accordion
+            questions={[
+              {
+                question: "Is Telehealth private?",
+                answer:
+                  "Just like in a face-to-face appointment, your Telehealth visit will be private and confidential.",
+              },
+              {
+                question: "Will the appointment be recorded?",
+                answer: "None of our appointments are recorded or stored.",
+              },
+              {
+                question: "Where can I find the Telehealth appointment link?",
+                answer:
+                  "Check your email inbox. From there, you should be able to find the link to the Google Meet. If it is not there, check your spam folder.",
+              },
+              {
+                question:
+                  "What should I do if I do not get the reminder with the link?",
+                answer:
+                  "Contact us at 910-777-5575 so we can send the link to you via email or secure messaging.",
+              },
+              {
+                question:
+                  "How can I prepare my space for a teletherapy appointment?",
+                answer: (
+                  <ul className="list-disc ml-4 space-y-1">
+                    <li>
+                      Identify a suitable room that is quiet, private, and free
+                      of distractions.
+                    </li>
+                    <li>
+                      Close doors, shut windows, and turn off TVs or loud
+                      devices.
+                    </li>
+                    <li>
+                      Consider a “Do Not Disturb” sign to avoid interruptions.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
         </div>
       </section>
 

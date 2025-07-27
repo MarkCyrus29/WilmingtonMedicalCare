@@ -98,7 +98,7 @@ export default function Footer() {
 
       {/* Bottom copyright */}
       <div className="mt-10 border-t border-dark/40 pt-6 text-center text-gray-500">
-        © 2025 Wilmington Medical Care
+        © 2025 Wilmingtonc:\Users\Cyrus\Documents\coding-shit\Projects\008 Wilmington-mentalhealth\wilmington\components\ui\Spinner.tsx Medical Care
       </div>
     </footer>
   );

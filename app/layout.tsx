@@ -29,7 +29,7 @@ export default function RootLayout({
         <Header />
         <ParallaxProviderWrapper>{children}</ParallaxProviderWrapper>
         <ScrollToTopButton />
-        <GetInTouch/>
+        <GetInTouch />
         <Footer />
       </body>
     </html>
