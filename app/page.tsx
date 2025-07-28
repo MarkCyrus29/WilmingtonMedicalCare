@@ -22,8 +22,8 @@ export default function Home() {
 
           {/* Text */}
           <div className="absolute z-30 max-w-2xl text-white left-6 right-6 top-1/2 -translate-y-1/2 md:left-24 md:right-auto text-center md:text-left">
-            <h1 className="!text-white text-3xl sm:text-4xl md:text-5xl mb-4">
-              Welcome to Wilmington
+            <h1 className="!text-white !text-3xl sm:!text-4xl md:!text-5xl mb-4 w-full">
+              Welcome to Wilmington Medical Care
             </h1>
             <p className="!text-white/80 text-base sm:text-lg">
               Compassionate medical care designed for you.
